@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7AA2276476130C9E36288E8 /* Pods_DHChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B665543997B5F6D578A287E5 /* Pods_DHChat.framework */; };
+		F123E32F1DE2A3D00085DC85 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123E32E1DE2A3D00085DC85 /* ChatRoomViewController.swift */; };
+		F123E3311DE2A68B0085DC85 /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123E3301DE2A68B0085DC85 /* FriendListViewController.swift */; };
+		F12F2F1D1DE118C20033F9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F2F1C1DE118C20033F9DA /* AppDelegate.swift */; };
+		F12F2F221DE118C20033F9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F2F201DE118C20033F9DA /* Main.storyboard */; };
+		F12F2F241DE118C20033F9DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12F2F231DE118C20033F9DA /* Assets.xcassets */; };
+		F12F2F271DE118C20033F9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12F2F251DE118C20033F9DA /* LaunchScreen.storyboard */; };
+		F12F2F301DE1363C0033F9DA /* openssl_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F12F2F2F1DE1363C0033F9DA /* openssl_bridge.m */; };
+		F131E71E1DE1BC8B00873693 /* DHkeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F131E71D1DE1BC8B00873693 /* DHkeyManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C5BD382A6395038C877CA6C /* Pods-DHChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DHChat/Pods-DHChat.debug.xcconfig"; sourceTree = "<group>"; };
+		6739DEFC153352EA90581559 /* Pods-DHChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DHChat/Pods-DHChat.release.xcconfig"; sourceTree = "<group>"; };
+		B665543997B5F6D578A287E5 /* Pods_DHChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F123E32E1DE2A3D00085DC85 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		F123E3301DE2A68B0085DC85 /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		F12F2F191DE118C20033F9DA /* DHChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12F2F1C1DE118C20033F9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F12F2F211DE118C20033F9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F12F2F231DE118C20033F9DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F12F2F261DE118C20033F9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F12F2F281DE118C20033F9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12F2F2E1DE1363C0033F9DA /* DHChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		F12F2F2F1DE1363C0033F9DA /* openssl_bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_bridge.m; sourceTree = "<group>"; };
+		F131E71D1DE1BC8B00873693 /* DHkeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHkeyManager.m; sourceTree = "<group>"; };
+		F131E71F1DE1BCE400873693 /* DHKeyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHKeyManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F12F2F161DE118C20033F9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AA2276476130C9E36288E8 /* Pods_DHChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76A0D644F1AC625AC664400A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B665543997B5F6D578A287E5 /* Pods_DHChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F12F2F101DE118C20033F9DA = {
+			isa = PBXGroup;
+			children = (
+				F12F2F1B1DE118C20033F9DA /* DHChat */,
+				F12F2F1A1DE118C20033F9DA /* Products */,
+				F8A7506D84311419626D50C7 /* Pods */,
+				76A0D644F1AC625AC664400A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F12F2F1A1DE118C20033F9DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F12F2F191DE118C20033F9DA /* DHChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F12F2F1B1DE118C20033F9DA /* DHChat */ = {
+			isa = PBXGroup;
+			children = (
+				F12F2F1C1DE118C20033F9DA /* AppDelegate.swift */,
+				F12F2F201DE118C20033F9DA /* Main.storyboard */,
+				F12F2F231DE118C20033F9DA /* Assets.xcassets */,
+				F12F2F251DE118C20033F9DA /* LaunchScreen.storyboard */,
+				F12F2F281DE118C20033F9DA /* Info.plist */,
+				F12F2F2F1DE1363C0033F9DA /* openssl_bridge.m */,
+				F12F2F2E1DE1363C0033F9DA /* DHChat-Bridging-Header.h */,
+				F131E71D1DE1BC8B00873693 /* DHkeyManager.m */,
+				F131E71F1DE1BCE400873693 /* DHKeyManager.h */,
+				F123E32E1DE2A3D00085DC85 /* ChatRoomViewController.swift */,
+				F123E3301DE2A68B0085DC85 /* FriendListViewController.swift */,
+			);
+			path = DHChat;
+			sourceTree = "<group>";
+		};
+		F8A7506D84311419626D50C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C5BD382A6395038C877CA6C /* Pods-DHChat.debug.xcconfig */,
+				6739DEFC153352EA90581559 /* Pods-DHChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F12F2F181DE118C20033F9DA /* DHChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12F2F2B1DE118C20033F9DA /* Build configuration list for PBXNativeTarget "DHChat" */;
+			buildPhases = (
+				0AA2BC549F0B3940F98233AA /* [CP] Check Pods Manifest.lock */,
+				F12F2F151DE118C20033F9DA /* Sources */,
+				F12F2F161DE118C20033F9DA /* Frameworks */,
+				F12F2F171DE118C20033F9DA /* Resources */,
+				6B6A3227570EA37AA3371925 /* [CP] Embed Pods Frameworks */,
+				044ACB19C7C7D52BD9CEB8A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHChat;
+			productName = DHChat;
+			productReference = F12F2F191DE118C20033F9DA /* DHChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F12F2F111DE118C20033F9DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = haipv;
+				TargetAttributes = {
+					F12F2F181DE118C20033F9DA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 252V25ZLL5;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F12F2F141DE118C20033F9DA /* Build configuration list for PBXProject "DHChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F12F2F101DE118C20033F9DA;
+			productRefGroup = F12F2F1A1DE118C20033F9DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F12F2F181DE118C20033F9DA /* DHChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F12F2F171DE118C20033F9DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12F2F271DE118C20033F9DA /* LaunchScreen.storyboard in Resources */,
+				F12F2F241DE118C20033F9DA /* Assets.xcassets in Resources */,
+				F12F2F221DE118C20033F9DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044ACB19C7C7D52BD9CEB8A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DHChat/Pods-DHChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0AA2BC549F0B3940F98233AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B6A3227570EA37AA3371925 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DHChat/Pods-DHChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F12F2F151DE118C20033F9DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F131E71E1DE1BC8B00873693 /* DHkeyManager.m in Sources */,
+				F123E3311DE2A68B0085DC85 /* FriendListViewController.swift in Sources */,
+				F123E32F1DE2A3D00085DC85 /* ChatRoomViewController.swift in Sources */,
+				F12F2F301DE1363C0033F9DA /* openssl_bridge.m in Sources */,
+				F12F2F1D1DE118C20033F9DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F12F2F201DE118C20033F9DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F12F2F211DE118C20033F9DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F12F2F251DE118C20033F9DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F12F2F261DE118C20033F9DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F12F2F291DE118C20033F9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F12F2F2A1DE118C20033F9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F12F2F2C1DE118C20033F9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5BD382A6395038C877CA6C /* Pods-DHChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 252V25ZLL5;
+				INFOPLIST_FILE = DHChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.DHChat.DHChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DHChat/DHChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F12F2F2D1DE118C20033F9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6739DEFC153352EA90581559 /* Pods-DHChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 252V25ZLL5;
+				INFOPLIST_FILE = DHChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.DHChat.DHChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DHChat/DHChat-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F12F2F141DE118C20033F9DA /* Build configuration list for PBXProject "DHChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12F2F291DE118C20033F9DA /* Debug */,
+				F12F2F2A1DE118C20033F9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12F2F2B1DE118C20033F9DA /* Build configuration list for PBXNativeTarget "DHChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12F2F2C1DE118C20033F9DA /* Debug */,
+				F12F2F2D1DE118C20033F9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F12F2F111DE118C20033F9DA /* Project object */;
+}
